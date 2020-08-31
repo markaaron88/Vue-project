@@ -1,0 +1,85 @@
+<template>
+  <header>
+    <div class="header_logo">
+      <img src="../assets/images/taco.png" alt=" taco_logo " />
+      <h1 href="/">El Amigo</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <router-link :to="{ name: 'homeLink' }" tag="li"
+          ><a>Home</a>
+        </router-link>
+
+        <span>~</span>
+
+        <router-link :to="{ name: 'menuLink' }" tag="li"
+          ><a>Menu</a>
+        </router-link>
+
+        <span>~</span>
+
+        <router-link :to="{ name: 'contactLink' }" tag="li"
+          ><a>Contact</a>
+        </router-link>
+
+        <span>~</span>
+        <!-- <li> -->
+        <router-link :to="{ name: 'aboutLink' }" tag="li"
+          ><a>About</a>
+        </router-link>
+      </ul>
+    </nav>
+  </header>
+</template>
+
+<script>
+export default {
+  name: "appHeader",
+};
+</script>
+
+<style scoped>
+@font-face {
+  font-family: "MexicanTequila";
+  src: url(../assets/fonts/MexicanTequila.ttf);
+}
+
+@font-face {
+  font-family: "burrito";
+  src: url(../assets/fonts/burrito.TTF);
+}
+
+h1 {
+  font-size: 3.3em;
+  color: white;
+  font-family: "burrito", sans-serif;
+}
+
+.header_logo {
+  background-color: #ce1126;
+  background-size: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header_logo img {
+  max-width: 25vw;
+}
+
+ul {
+  padding: 10px 0;
+}
+
+li {
+  display: inline-block;
+}
+
+@media screen and (min-width: 900px) {
+  .header_logo img {
+    max-width: 20vw;
+  }
+}
+</style>
