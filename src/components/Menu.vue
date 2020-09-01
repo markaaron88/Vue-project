@@ -19,13 +19,7 @@
             <td>{{ option.size }}</td>
             <td>{{ option.price | currency }}</td>
             <td>
-              <button
-                type="button"
-                class="btn_green"
-                @click="addToBasket(item, option)"
-              >
-                +
-              </button>
+              <button type="button" class="btn_green" @click="addToBasket(item, option)">+</button>
             </td>
           </tr>
         </tbody>
@@ -39,13 +33,9 @@
           <tbody v-for="(item, index) in basket" :key="index">
             <tr>
               <td>
-                <button class="btn_green" @click="decreaseQuantity(item)">
-                  &#8722;
-                </button>
+                <button class="btn_green" @click="decreaseQuantity(item)">&#8722;</button>
                 <span>{{ item.quantity }}</span>
-                <button class="btn_green" @click="increaseQuantity(item)">
-                  &#43;
-                </button>
+                <button class="btn_green" @click="increaseQuantity(item)">&#43;</button>
               </td>
               <td>{{ item.name }} {{ item.size }}</td>
               <td>{{ (item.price * item.quantity) | currency }}</td>
@@ -62,44 +52,6 @@
   </div>
 </template>
 
-<style scoped>
-h3 {
-  text-align: center;
-}
-
-.menu_wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.menu img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 30%;
-}
-.menu,
-.basket {
-  background: #f1e6da;
-  border-radius: 3px;
-  height: 100vh;
-  margin: 10px;
-  padding: 10px;
-}
-
-@media screen and (min-width: 900px) {
-  .menu_wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .menu {
-    width: 65vw;
-  }
-  .basket {
-    width: 35vw;
-  }
-}
-</style>
 
 <script>
 import { mapGetters } from "vuex";
@@ -162,3 +114,42 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h3 {
+  text-align: center;
+}
+
+.menu_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
+}
+.menu,
+.basket {
+  background: #f1e6da;
+  border-radius: 3px;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .menu_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    width: 65vw;
+  }
+  .basket {
+    width: 35vw;
+  }
+}
+</style>

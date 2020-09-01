@@ -7,26 +7,26 @@
 
     <nav>
       <ul>
-        <router-link :to="{ name: 'homeLink' }" tag="li"
-          ><a>Home</a>
+        <router-link :to="{ name: 'homeLink' }" tag="li">
+          <a>Home</a>
         </router-link>
 
         <span>~</span>
 
-        <router-link :to="{ name: 'menuLink' }" tag="li"
-          ><a>Menu</a>
+        <router-link :to="{ name: 'menuLink' }" tag="li">
+          <a>Menu</a>
         </router-link>
 
         <span>~</span>
 
-        <router-link :to="{ name: 'contactLink' }" tag="li"
-          ><a>Contact</a>
+        <router-link :to="{ name: 'contactLink' }" tag="li">
+          <a>Contact</a>
         </router-link>
 
         <span>~</span>
         <!-- <li> -->
-        <router-link :to="{ name: 'aboutLink' }" tag="li"
-          ><a>About</a>
+        <router-link :to="{ name: 'aboutLink' }" tag="li">
+          <a>About</a>
         </router-link>
       </ul>
     </nav>

@@ -1,7 +1,6 @@
 <template>
   <div class="background">
     <div class="background-overlay">
-      <h2>Welcome to El Amigo</h2>
       <img src="../assets/images/mexico.png" alt="roller" />
       <h3>Feeling hungry?</h3>
       <button class="order_btn" @click="goToMenu">Let's order!</button>
