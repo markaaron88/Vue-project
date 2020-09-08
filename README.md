@@ -1,7 +1,23 @@
-# Created a Mexican Resturant Full Stack Web application using Vue.js, Vuex, Vuex Router and Firebase(Firestore database, Cloud Functions), implemented Firebase authentication for admin user. Check out the live appliction here: https://elamigorest.netlify.app/
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+
+## General info
+Created a Resturant Ordering Service Full stack web application.Implemented Firebase authentication for admin user. Check out the live appliction here: https://elamigorest.netlify.app/
 ![](menu.png)
 
-## Project setup
+## Technologies
+Project is created with:
+* Vue.js
+* Vuex Router
+* Firebase(Firestore database, Cloud Functions)
+	
+
+
+
+## Setup
 
 ```
 npm install
