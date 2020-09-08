@@ -13,6 +13,8 @@ Project is created with:
 * Vue.js
 * Vuex Router
 * Firebase(Firestore database, Cloud Functions)
+* JavaScript
+* HTML
 	
 
 
